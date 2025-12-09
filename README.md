@@ -1,7 +1,7 @@
 # 🖥️ Windows Optimization Guide
 > Advanced optimization for ASUS Zephyrus G14 (2021, R9 5900HS + RTX 3060)
 
-## 📋 Table of Contents
+## Table of Contents
 1. [Store Apps on LTSC](#store-apps-on-ltsc)
 2. [Advanced Power Management](#advanced-power-management)
 3. [ROG Hardware Optimization](#rog-hardware-optimization)
