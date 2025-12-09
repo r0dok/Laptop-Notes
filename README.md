@@ -1,4 +1,4 @@
-# 🖥️ Windows Optimization Guide
+#  Windows Optimization Guide
 > Advanced optimization for ASUS Zephyrus G14 (2021, R9 5900HS + RTX 3060)
 
 ## Table of Contents
@@ -236,7 +236,6 @@ Get-CimInstance Win32_StartupCommand | Where-Object {$_.Name -like "*Adobe*" -or
 - Don't disable Windows Update completely (security risk)
 - Don't set CPU max to 100% (causes thermal throttling)
 - Don't use aggressive CPU boost modes (Mode 2/4) without adequate cooling
-- Don't disable all telemetry (breaks some Windows features)# 🖥️ Windows Optimization Guide
-> Advanced optimization for ASUS Zephyrus G14 (2021, R9 5900HS + RTX 3060)
+- Don't disable all telemetry (breaks some Windows features)
 
 
