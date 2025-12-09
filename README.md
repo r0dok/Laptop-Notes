@@ -1,4 +1,4 @@
-#  Windows Optimization Guide
+# Windows Optimization Guide
 > Advanced optimization for ASUS Zephyrus G14 (2021, R9 5900HS + RTX 3060)
 
 ## Table of Contents
@@ -87,13 +87,20 @@ Set-Service "ArmouryCrateControlInterface" -StartupType Disabled
 ### G-Helper Configuration
 Download: [github.com/seerge/g-helper](https://github.com/seerge/g-helper)
 
-![G-Helper Settings](References/GHelper1.png)
+<details>
+<summary>View recommended settings</summary>
+
+![G-Helper Settings 1](References/GHelper1.png)
+![G-Helper Settings 2](References/GHelper2.png)
+![G-Helper Settings 3](References/GHelper3.png)
+![G-Helper Settings 4](References/GHelper4.png)
 
 **Recommended Settings**:
 - Performance Mode: **Balanced**
 - CPU Boost: **Efficient** (Mode 3)
 - GPU Mode: **Eco** (for battery) / **Standard** (plugged in)
 - Screen refresh: **60Hz** (battery) / **144Hz** (plugged in)
+</details>
 
 ### NVIDIA Driver Optimization
 ```powershell
@@ -198,11 +205,6 @@ All configuration files and screenshots are available in the `References/` folde
 - **[WinaeroTweaker.ini](References/WinaeroTweaker.ini)** - Complete Winaero Tweaker settings
 - **[Optimizer.zip](References/Optimizer.zip)** - Pre-configured Optimizer settings
 
-#### Visual Guides
-- **[GHelper1.png](References/GHelper1.png)** - G-Helper recommended configuration
-- **[Optimizer1.png](References/Optimizer1.png)** - Optimizer settings page 1
-- **[Optimizer2.png](References/Optimizer2.png)** - Optimizer settings page 2
-
 ### Power Plan Export
 ```powershell
 # Export optimized power plan
@@ -237,5 +239,3 @@ Get-CimInstance Win32_StartupCommand | Where-Object {$_.Name -like "*Adobe*" -or
 - Don't set CPU max to 100% (causes thermal throttling)
 - Don't use aggressive CPU boost modes (Mode 2/4) without adequate cooling
 - Don't disable all telemetry (breaks some Windows features)
-
-
